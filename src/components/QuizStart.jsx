@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardHeader, CardContent, CardFooter } from '../components/ui/card';
+import { Button } from '../components/ui/button';
 import { Trophy } from 'lucide-react';
 
 const QuizStart = ({ quizData, onStart }) => {

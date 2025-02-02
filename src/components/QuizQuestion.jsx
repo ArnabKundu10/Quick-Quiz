@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Progress } from '@/components/ui/progress';
+import { Card, CardHeader, CardContent, CardFooter } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Progress } from '../components/ui/progress';
 import { formatTime } from '../utils/helpers';
 
 const QuizQuestion = ({ 

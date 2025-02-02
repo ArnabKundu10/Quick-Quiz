@@ -18,7 +18,8 @@ const Quiz = () => {
   const [gameState, setGameState] = useState({
     score: 0,
     streak: 0,
-    achievements: []
+    achievements: [],
+    highestStreak:0,
   });
 
   useEffect(() => {
@@ -67,7 +68,8 @@ const Quiz = () => {
     setGameState(prev => ({
       ...prev,
       score: prev.score + (isCorrect ? 4 : -1),
-      streak: isCorrect ? prev.streak + 1 : 0
+      streak: isCorrect ? prev.streak + 1 : 0,
+      highestStreak: isCorrect ? Math.max(prev.highestStreak,prev.streak+1):Math.max(prev.highestStreak,0),
     }));
 
     if (currentQuestion + 1 >= quizData.questions.length) {
@@ -82,7 +84,11 @@ const Quiz = () => {
     setAnswers([]);
     setQuizState('start');
     setTimeLeft(quizData.duration * 60);
-    setGameState(prev => ({ ...prev, streak: 0 }));
+    setGameState(prev => ({ ...prev,
+       score: 0,
+      streak: 0,
+      achievements: [],
+      highestStreak:0, }));
   };
 
   if (loading) return <div className="text-center p-8">Loading...</div>;
@@ -107,6 +113,8 @@ const Quiz = () => {
           answers={answers}
           totalQuestions={quizData.questions.length}
           onRestart={handleRestart}
+          timeLeft={timeLeft}
+          highestStreak={gameState.highestStreak}
         />
       )}
       <Gamification {...gameState} />

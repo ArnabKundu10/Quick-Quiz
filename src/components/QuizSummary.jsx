@@ -1,13 +1,13 @@
 import React from 'react';
-import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { calculateScore } from '../utils/helpers';
+import { Card, CardHeader, CardContent, CardFooter } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { calculateScore,formatTime } from '../utils/helpers';
 
-const QuizSummary = ({ answers, totalQuestions, onRestart }) => {
+const QuizSummary = ({ answers, totalQuestions, onRestart,timeLeft,highestStreak}) => {
   const score = calculateScore(answers);
   const correctAnswers = answers.filter(a => a.isCorrect).length;
   const accuracy = ((correctAnswers / totalQuestions) * 100).toFixed(1);
-
+  
   return (
     <Card className="w-full max-w-2xl mx-auto mt-8">
       <CardHeader>
@@ -43,7 +43,11 @@ const QuizSummary = ({ answers, totalQuestions, onRestart }) => {
             </div>
             <div className="flex justify-between">
               <span>Time Taken</span>
-              <span>TODO: Add time tracking</span>
+              <span>{formatTime(900-timeLeft)}</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Longest Streak</span>
+              <span>{highestStreak}</span>
             </div>
           </div>
         </div>

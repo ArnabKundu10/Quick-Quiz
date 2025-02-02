@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardHeader, CardContent, CardFooter } from '../components/ui/card';
+import { Button } from '../components/ui/button';
 import { 
   Trophy, 
   Clock, 
