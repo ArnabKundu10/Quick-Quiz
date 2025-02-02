@@ -106,7 +106,10 @@ npm run lint     # Run ESLint checks
 ![Progress View](https://github.com/user-attachments/assets/18dde30e-fc48-43fe-8218-b6a8464a398e)
 *Real-time progress tracking*
 
-![Results](https://github.com/user-attachments/assets/f36295b0-ca79-4565-bfc9-de4e7b9a80bf)
+![Progress View](https://github.com/user-attachments/assets/f36295b0-ca79-4565-bfc9-de4e7b9a80bf)
+*Real-time progress tracking*
+
+![Results](https://github.com/user-attachments/assets/5fb632e3-1170-4910-a289-2bcf78b1575a)
 *Detailed performance summary*
 
 ## 🤝 Contributing
