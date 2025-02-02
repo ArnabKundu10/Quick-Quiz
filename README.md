@@ -109,6 +109,9 @@ npm run lint     # Run ESLint checks
 ![Results](https://github.com/user-attachments/assets/f36295b0-ca79-4565-bfc9-de4e7b9a80bf)
 *Detailed performance summary*
 
+![Results](https://github.com/user-attachments/assets/16f7416d-5fa8-451d-a136-ea1e12ececf7)
+*Detailed performance summary*
+
 ## 🤝 Contributing
 
 1. Fork the repository
