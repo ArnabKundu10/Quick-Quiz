@@ -132,9 +132,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 📞 Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
+Your Name - [Arnab Kundu](https://twitter.com/yourusername)
 
-Project Link: [https://github.com/yourusername/quiz-app](https://github.com/yourusername/quiz-app)
+Project Link: [https://github.com/ArnabKundu10/Quick-Quiz/](https://github.com/ArnabKundu10/Quick-Quiz/)
 
 ---
 ⭐ Star us on GitHub — it helps!
