@@ -6,7 +6,7 @@ export const fetchQuizData = async () => {
     console.log("test");
     const response = await axios.get(
       // "https://thingproxy.freeboard.io/fetch/https://api.jsonserve.com/Uw5CrX",
-      "http://localhost:3000/auth"
+      "https://quick-quiz-lake.vercel.app/auth"
     );
 
     if (!response) throw new Error("Failed to fetch quiz data");
