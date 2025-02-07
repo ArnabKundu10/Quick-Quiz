@@ -28,7 +28,7 @@ const Quiz = () => {
 
   const loadQuizData = async () => {
     try {
-      const data = await fetchQuizData();
+      const data =await fetchQuizData();
       console.log(data);
       setQuizData(data);
       setTimeLeft(data.duration * 60);
