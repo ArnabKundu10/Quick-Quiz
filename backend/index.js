@@ -20,7 +20,7 @@ app.get("/auth", async (req, res) => {
     const response = await fetch("https://api.jsonserve.com/Uw5CrX");
     const data = await response.json();
     console.log(data);
-    fs.writeFileSync("ques.json", JSON.stringify(data, null, 2));
+   //  fs.writeFileSync("ques.json", JSON.stringify(data, null, 2));
     res.status(201).json(data);
   } catch (error) {
     console.log(error);
