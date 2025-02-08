@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 // console.log(__dirname);
     const filepath=path.join(__dirname,"ques.json");
     console.log(filepath);
-    const response=fs.readFileSync("ques.json");
+    const response=fs.readFileSync(filepath);
         const data = JSON.parse(response);
 app.get("/auth", async (req, res) => {
   try {
